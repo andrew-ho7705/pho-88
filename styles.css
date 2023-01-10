@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: 'Cinzel', Georgia, serif;
+}
+
+.headerContainer {
+    position: relative;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    filter: brightness(75%);
+}
+
+.textContainer {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    padding-bottom: 4.5rem;
+    height: auto;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+    justify-content: center;
+}
+
+.text {
+    font-size: 2rem;
+    color: white;
+    transform: translate(0%, 3rem);
+}
+
+.body {
+    padding-top: 1.5rem;
+}
+
+.intro {
+    letter-spacing: 2px; 
+    font-size: 50px; 
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+}
+
+.aboutUs, .DIOTO {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.bodyTextHeader {
+    font-size: 22px;
+}
+
+p {
+    text-align: center;
+    padding-top: 2.2rem; 
+    letter-spacing: 0px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.menuSection {
+    background-color: #F7F1C8;
+}
+
+.menu {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    font-size: 22px;
+}
+
+.appetizerHeader {
+    font-size: 40px;
+    padding-left: 2rem;
+}
