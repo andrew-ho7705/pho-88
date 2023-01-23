@@ -78,7 +78,12 @@ p {
     font-size: 22px;
 }
 
-.appetizerHeader {
+.menuItemHeader {
     font-size: 40px;
     padding-left: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+#appetizers, #sandwiches, #kidsmenu, #wontonsoup, #sideitems, #pho, #mi, #bun, #com, #giaikhat, #tapiocadrinks {
+    padding-left: 2.5rem;
 }

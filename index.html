@@ -9,7 +9,7 @@
     <title>Pho 88</title>
 </head>
 
-<body onload="displayAppetizers()">
+<body onload="displayMenu()">
     <div>
         <div class="headerContainer">
             <img src="../assets/phoImg.webp" alt="">
@@ -48,19 +48,121 @@
 
     <div class="menuSection">
         <div class="menu">Menu</div>
-        <div class="appetizerHeader">
-            Appetizers - Khai Vi
-            <div id="appetizers"></div>
-        </div>
+        <div class="menuItemHeader">Appetizers - Khai Vi</div>
+        <div id="appetizers"></div>
+        <div class="menuItemHeader">Sandwiches - Banh Mi</div>
+        <div id="sandwiches"></div>
+        <div class="menuItemHeader">Kids Menu</div>
+        <div id="kidsmenu"></div>
+        <div class="menuItemHeader">Wonton Soup</div>
+        <div id="wontonsoup"></div>
+        <div class="menuItemHeader">Side Items</div>
+        <div id="sideitems"></div>
+        <div class="menuItemHeader">Rice Noodle Soup - Pho</div>
+        <div id="pho"></div>
+        <div class="menuItemHeader">Egg Noodle Soup - Mi</div>
+        <div id="mi"></div>
+        <div class="menuItemHeader">Vermicelli - Bun</div>
+        <div id="bun"></div>
+        <div class="menuItemHeader">Rice Plates - Com</div>
+        <div id="com"></div>
+        <div class="menuItemHeader">Beverages - Giai Khat</div>
+        <div id="giaikhat"></div>
+        <div class="menuItemHeader">Tapioca Drinks</div>
+        <div id="tapiocadrinks"></div>
     </div>
     <script>
         const appetizerContainer = document.getElementById('appetizers');
+        const sandwichContainer = document.getElementById('sandwiches');
+        const kidsMenuContainer = document.getElementById('kidsmenu');
+        const wontonSoupContainer = document.getElementById('wontonsoup');
+        const sideItemsContainer = document.getElementById('sideitems');
+        const phoContainer = document.getElementById('pho');
+        const miContainer = document.getElementById('mi');
+        const bunContainer = document.getElementById('bun');
+        const comContainer = document.getElementById('com');
+        const giaiKhatContainer = document.getElementById('giaikhat');
+        const tapiocaDrinksContainer = document.getElementById('tapiocadrinks');
 
-        function displayAppetizers() {
+        function displayMenu() {
             menuItems.forEach(item => {
-                if(item.class == "appetizers") {
-                    console.log(item);
-                    appetizerContainer.innerHTML += "<p>" + item.id + "." + " " + item.name + "</p>"
+                switch(item.class) {
+                    case "appetizers": 
+                        appetizerContainer.innerHTML += "<h3>" + item.id + "." + " " + item.name + "</h3>";
+                        appetizerContainer.innerHTML += "<h3>" + item.price + "</h3>";
+                        appetizerContainer.innerHTML += "<h3>" + item.desc + "</h3>";
+                        appetizerContainer.innerHTML += "<p></p>";
+                        break;
+
+                    case "sandwiches":
+                        sandwichContainer.innerHTML += "<h3>" + item.id + "." + " " + item.name + "</h3>";
+                        sandwichContainer.innerHTML += "<h3>" + item.price + "</h3>";
+                        sandwichContainer.innerHTML += "<h3>" + item.desc + "</h3>";
+                        sandwichContainer.innerHTML += "<p></p>";
+                        break;
+
+                    case "kidsmenu":
+                        kidsMenuContainer.innerHTML += "<h3>" + item.id + "." + " " + item.name + "</h3>";
+                        kidsMenuContainer.innerHTML += "<h3>" + item.price + "</h3>";
+                        kidsMenuContainer.innerHTML += "<h3>" + item.desc + "</h3>";
+                        kidsMenuContainer.innerHTML += "<p></p>";
+                        break;
+
+                    case "wontonsoup":
+                        wontonSoupContainer.innerHTML += "<h3>" + item.id + "." + " " + item.name + "</h3>";
+                        wontonSoupContainer.innerHTML += "<h3>" + item.price + "</h3>";
+                        wontonSoupContainer.innerHTML += "<h3>" + item.desc + "</h3>";
+                        wontonSoupContainer.innerHTML += "<p></p>";
+                        break;
+                    
+                    case "sideitems":
+                        sideItemsContainer.innerHTML += "<h3>" + item.name + "</h3>";
+                        sideItemsContainer.innerHTML += "<h3>" + item.price + "</h3>";
+                        sideItemsContainer.innerHTML += "<h3>" + item.desc + "</h3>";
+                        sideItemsContainer.innerHTML += "<p></p>";
+                        break;
+
+                    case "pho":
+                        phoContainer.innerHTML += "<h3>" + item.name + "</h3>";
+                        phoContainer.innerHTML += "<h3>" + item.price + "</h3>";
+                        phoContainer.innerHTML += "<h3>" + item.desc + "</h3>";
+                        phoContainer.innerHTML += "<p></p>";
+                        break;
+
+                    case "mi":
+                        miContainer.innerHTML += "<h3>" + item.name + "</h3>";
+                        miContainer.innerHTML += "<h3>" + item.price + "</h3>";
+                        miContainer.innerHTML += "<h3>" + item.desc + "</h3>";
+                        miContainer.innerHTML += "<p></p>";
+                        break;
+
+                    case "bun":
+                        bunContainer.innerHTML += "<h3>" + item.name + "</h3>";
+                        bunContainer.innerHTML += "<h3>" + item.price + "</h3>";
+                        bunContainer.innerHTML += "<h3>" + item.desc + "</h3>";
+                        bunContainer.innerHTML += "<p></p>";
+                        break;
+
+                    case "com":
+                        comContainer.innerHTML += "<h3>" + item.name + "</h3>";
+                        comContainer.innerHTML += "<h3>" + item.price + "</h3>";
+                        comContainer.innerHTML += "<h3>" + item.desc + "</h3>";
+                        comContainer.innerHTML += "<p></p>";
+                        break;
+
+                    case "giaikhat":
+                        giaiKhatContainer.innerHTML += "<h3>" + item.name + "</h3>";
+                        giaiKhatContainer.innerHTML += "<h3>" + item.price + "</h3>";
+                        giaiKhatContainer.innerHTML += "<h3>" + item.desc + "</h3>";
+                        giaiKhatContainer.innerHTML += "<p></p>";
+                        break;
+
+                    case "tapiocadrinks":
+                        tapiocaDrinksContainer.innerHTML += "<h3>" + item.name + "</h3>";
+                        tapiocaDrinksContainer.innerHTML += "<h3>" + item.price + "</h3>";
+                        tapiocaDrinksContainer.innerHTML += "<h3>" + item.desc + "</h3>";
+                        tapiocaDrinksContainer.innerHTML += "<p></p>";
+                        break;
                 }
             })
             
